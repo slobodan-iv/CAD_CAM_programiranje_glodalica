@@ -189,11 +189,11 @@
                 <div class="accordion" id="sw_tutorial">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="carousel_O130_CAM">
-                      <button class="btn accordion-button disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_carousel_O130_CAM" aria-expanded="true" aria-controls="collapse_carousel_O130_CAM">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_carousel_O130_CAM" aria-expanded="true" aria-controls="collapse_carousel_O130_CAM">
                         Кратки подсетник:
                       </button>
                     </h2>
-                    <div id="collapse_carousel_O130_CAM" class="accordion-collapse collapse" aria-labelledby="carousel_O130_CAM" data-bs-parent="#sw_tutorial">
+                    <div id="collapse_carousel_O130_CAM" class="accordion-collapse collapse show" aria-labelledby="carousel_O130_CAM" data-bs-parent="#sw_tutorial">
                       <div class="accordion-body">
                         <div id="carousel_sw_tutorial" class="carousel carousel-dark slide" data-bs-ride="carousel">
                           <div class="carousel-indicators">
@@ -270,7 +270,7 @@
                         Дефинисање машине, постпроцесора, припремка и координатног система (основни елементи CAD/CAM програма):
                       </button>
                     </h2>
-                    <div id="collapse_O130_CAM_setup_tutorial" class="accordion-collapse collapse show" aria-labelledby="O130_CAM_setup_tutorial" data-bs-parent="#sw_tutorial">
+                    <div id="collapse_O130_CAM_setup_tutorial" class="accordion-collapse collapse" aria-labelledby="O130_CAM_setup_tutorial" data-bs-parent="#sw_tutorial">
                       <div class="accordion-body">
                         <div class="card ratio ratio-16x9">
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/OhUgxDw1Kx4?si=mgZBCn0wcZvVzlBP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -350,16 +350,25 @@
                             <button class="nav-link active" id="generate_OP_for_OP_SW-tab" data-bs-toggle="tab" data-bs-target="#generate_OP_for_OP_SW" type="button" role="tab" aria-controls="generate_OP_for_OP_SW" aria-selected="true">Generate Operation Plan</button>
                           </li>
                           <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="gruba_obrada_1_OP-tab" data-bs-toggle="tab" data-bs-target="#gruba_obrada_1_OP" type="button" role="tab" aria-controls="gruba_obrada_1_OP" aria-selected="true">Груба обрада - с1</button>
+                            <button class="nav-link" id="gruba_obrada_1_OP-tab" data-bs-toggle="tab" data-bs-target="#gruba_obrada_1_OP" type="button" role="tab" aria-controls="gruba_obrada_1_OP" aria-selected="true">Груба обрада 1</button>
                           </li>
                           <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="gruba_obrada_2_OP-tab" data-bs-toggle="tab" data-bs-target="#gruba_obrada_2_OP" type="button" role="tab" aria-controls="gruba_obrada_2_OP" aria-selected="true">Груба обрада - с2</button>
+                            <button class="nav-link" id="gruba_obrada_2_OP-tab" data-bs-toggle="tab" data-bs-target="#gruba_obrada_2_OP" type="button" role="tab" aria-controls="gruba_obrada_2_OP" aria-selected="true">Груба обрада 2</button>
                           </li>
                           <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="fina_obrada_1_OP-tab" data-bs-toggle="tab" data-bs-target="#fina_obrada_1_OP" type="button" role="tab" aria-controls="fina_obrada_1_OP" aria-selected="false">Фина обрада - с3</button>
+                            <button class="nav-link" id="fina_obrada_1_OP-tab" data-bs-toggle="tab" data-bs-target="#fina_obrada_1_OP" type="button" role="tab" aria-controls="fina_obrada_1_OP" aria-selected="false">Фина обрада 3</button>
                           </li>
                           <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="fina_obrada_2_OP-tab" data-bs-toggle="tab" data-bs-target="#fina_obrada_2_OP" type="button" role="tab" aria-controls="fina_obrada_2_OP" aria-selected="false">Фина обрада - с4</button>
+                            <button class="nav-link" id="fina_obrada_2_OP-tab" data-bs-toggle="tab" data-bs-target="#fina_obrada_2_OP" type="button" role="tab" aria-controls="fina_obrada_2_OP" aria-selected="false">Фина обрада 4</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pripremak_skrip_1-tab" data-bs-toggle="tab" data-bs-target="#pripremak_skrip_1" type="button" role="tab" aria-controls="pripremak_skrip_1" aria-selected="false">Шкрип 1</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pripremak_skrip_2-tab" data-bs-toggle="tab" data-bs-target="#pripremak_skrip_2" type="button" role="tab" aria-controls="pripremak_skrip_2" aria-selected="false">Шкрип 2</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pripremak_skrip_3-tab" data-bs-toggle="tab" data-bs-target="#pripremak_skrip_3" type="button" role="tab" aria-controls="pripremak_skrip_3" aria-selected="false">Шкрип 3</button>
                           </li>
                         </ul>
                         <div class="tab-content" id="O130_Generate_OP_for_Open_Pocket_TabContent">
@@ -386,6 +395,22 @@
                           <div class="tab-pane" id="fina_obrada_2_OP" role="tabpanel" aria-labelledby="fina_obrada_2_OP-tab">
                             <div class="card ratio ratio-16x9">
                               <iframe width="560" height="315" src="https://www.youtube.com/embed/AGJMItXqXPI?si=OgYq9AOM4KYhChZ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="pripremak_skrip_1" role="tabpanel" aria-labelledby="pripremak_skrip_1-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/w8RCcklZrxM?si=TnV4jq8ISNVmQ-Ur" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="pripremak_skrip_2" role="tabpanel" aria-labelledby="pripremak_skrip_2-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/Dswv7UOYz-E?si=gy4CkuNqfxycwa7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="pripremak_skrip_3" role="tabpanel" aria-labelledby="pripremak_skrip_3-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/vbrRcFQcvts?si=uZEWBhfank131gcz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -516,13 +541,16 @@
                             <button class="nav-link" id="faza_2_45_explanation-tab" data-bs-toggle="tab" data-bs-target="#faza_2_45_explanation" type="button" role="tab" aria-controls="faza_2_45_explanation" aria-selected="false">Фаза 2x45&deg;</button>
                           </li>
                           <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="faza_2_45_I_prolaz-tab" data-bs-toggle="tab" data-bs-target="#faza_2_45_I_prolaz" type="button" role="tab" aria-controls="faza_2_45_I_prolaz" aria-selected="false">Oбрада пролаз 1</button>
+                            <button class="nav-link" id="faza_2_45_I_prolaz-tab" data-bs-toggle="tab" data-bs-target="#faza_2_45_I_prolaz" type="button" role="tab" aria-controls="faza_2_45_I_prolaz" aria-selected="false">Пролаз 1</button>
                           </li>
                           <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="faza_2_45_IV_prolaz-tab" data-bs-toggle="tab" data-bs-target="#faza_2_45_IV_prolaz" type="button" role="tab" aria-controls="faza_2_45_IV_prolaz" aria-selected="false">Oбрада пролаз 4</button>
+                            <button class="nav-link" id="faza_2_45_IV_prolaz-tab" data-bs-toggle="tab" data-bs-target="#faza_2_45_IV_prolaz" type="button" role="tab" aria-controls="faza_2_45_IV_prolaz" aria-selected="false">Пролаз 4</button>
                           </li>
                           <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="faza_2_45_VIII_prolaz-tab" data-bs-toggle="tab" data-bs-target="#faza_2_45_VIII_prolaz" type="button" role="tab" aria-controls="faza_2_45_VIII_prolaz" aria-selected="false">Oбрада пролаз 8</button>
+                            <button class="nav-link" id="faza_2_45_VIII_prolaz-tab" data-bs-toggle="tab" data-bs-target="#faza_2_45_VIII_prolaz" type="button" role="tab" aria-controls="faza_2_45_VIII_prolaz" aria-selected="false">Пролаз 8</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="lazirani_precnik_fi_2_ili_fi_6-tab" data-bs-toggle="tab" data-bs-target="#lazirani_precnik_fi_2_ili_fi_6" type="button" role="tab" aria-controls="lazirani_precnik_fi_2_ili_fi_6" aria-selected="false">Лажирани пречник &#8960;2 или &#8960;6 mm</button>
                           </li>
                         </ul>
                         <div class="tab-content" id="O130_GOP_Chamfer_2_45_deg_TabContent">
@@ -554,6 +582,11 @@
                           <div class="tab-pane" id="faza_2_45_VIII_prolaz" role="tabpanel" aria-labelledby="faza_2_45_VIII_prolaz-tab">
                             <div class="card ratio ratio-16x9">
                               <iframe width="560" height="315" src="https://www.youtube.com/embed/RSgcyYpsWrY?si=SL4u1kcdGAUBwCY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="lazirani_precnik_fi_2_ili_fi_6" role="tabpanel" aria-labelledby="lazirani_precnik_fi_2_ili_fi_6-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/wQA6_wbqizg?si=rzat5A-LL649O2nW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                           </div>
                         </div>
@@ -668,42 +701,203 @@
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="O130_GOP_H_tutorial">
-                      <button class="btn accordion-button disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_GOP_H_tutorial" aria-expanded="true" aria-controls="collapse_O130_GOP_H_tutorial">
-                        Generate Operation Plan for Hole Group Feature:
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_GOP_H_tutorial" aria-expanded="true" aria-controls="collapse_O130_GOP_H_tutorial">
+                        Hole Group Feature:
                       </button>
                     </h2>
                     <div id="collapse_O130_GOP_H_tutorial" class="accordion-collapse collapse" aria-labelledby="O130_GOP_H_tutorial" data-bs-parent="#sw_tutorial">
                       <div class="accordion-body">
-                        <div class="card ratio ratio-16x9">
-                          
+                        <ul class="nav nav-tabs" id="O130_GOP_H_tutorial_Tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="generate_OP_hole_group-tab" data-bs-toggle="tab" data-bs-target="#generate_OP_hole_group" type="button" role="tab" aria-controls="generate_OP_hole_group" aria-selected="true">Generate Operation Plan</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="hole_group_zakljucak-tab" data-bs-toggle="tab" data-bs-target="#hole_group_zakljucak" type="button" role="tab" aria-controls="hole_group_zakljucak" aria-selected="false">Закључак</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="zabusivac_polomljen_ulje_za_rezanje-tab" data-bs-toggle="tab" data-bs-target="#zabusivac_polomljen_ulje_za_rezanje" type="button" role="tab" aria-controls="zabusivac_polomljen_ulje_za_rezanje" aria-selected="false">Оштећења и уље за резање</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="zabusivanje_snimak_1-tab" data-bs-toggle="tab" data-bs-target="#zabusivanje_snimak_1" type="button" role="tab" aria-controls="zabusivanje_snimak_1" aria-selected="false">Забушивање 1</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="zabusivanje_snimak_2-tab" data-bs-toggle="tab" data-bs-target="#zabusivanje_snimak_2" type="button" role="tab" aria-controls="zabusivanje_snimak_2" aria-selected="false">Забушивање 2</button>
+                          </li>
+                           <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="busenje_snimak_1-tab" data-bs-toggle="tab" data-bs-target="#busenje_snimak_1" type="button" role="tab" aria-controls="busenje_snimak_1" aria-selected="false">Бушење 1</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="busenje_snimak_2-tab" data-bs-toggle="tab" data-bs-target="#busenje_snimak_2" type="button" role="tab" aria-controls="busenje_snimak_2" aria-selected="false">Бушење 2</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="O130_GOP_H_tutorial_TabContent">
+                          <div class="tab-pane show active" id="generate_OP_hole_group" role="tabpanel" aria-labelledby="generate_OP_hole_group-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/qFZRq2oEv4Y?si=FK7cwPWd5p67mMnn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>                            
+                          </div>
+                          <div class="tab-pane" id="hole_group_zakljucak" role="tabpanel" aria-labelledby="hole_group_zakljucak-tab">
+                            <div class="card ratio ratio-16x9">
+                              <img src="Pictures/Carousel/O130/zakljucak_urezivanje_navoja.jpg" width="100%" alt="Урезивање навоја објашњење">
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="zabusivac_polomljen_ulje_za_rezanje" role="tabpanel" aria-labelledby="zabusivac_polomljen_ulje_za_rezanje-tab">
+                            <div class="card ratio ratio-16x9">
+                              <img src="Pictures/Carousel/O130/O130_navoj_1.jpg" width="100%" alt="Поломљен алат">
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="zabusivanje_snimak_1" role="tabpanel" aria-labelledby="zabusivanje_snimak_1-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/yrrLJfMsx1U?si=AjSFvN8zdIc5r0xv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="zabusivanje_snimak_2" role="tabpanel" aria-labelledby="zabusivanje_snimak_2-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/jo1_iUIfwio?si=ghWufOv4-1sEeC46" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="busenje_snimak_1" role="tabpanel" aria-labelledby="busenje_snimak_1-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/8eNEPaRt5Xw?si=eh3VL5QqVbve8VKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="busenje_snimak_2" role="tabpanel" aria-labelledby="busenje_snimak_2-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/D6cIY5aDI1A?si=D_NH7MGktsDc1uSX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="O130_izrada_navoja">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_izrada_navoja" aria-expanded="true" aria-controls="collapse_O130_izrada_navoja">
+                        Израда навоја M6 x 1 на CNC машини:
+                      </button>
+                    </h2>
+                    <div id="collapse_O130_izrada_navoja" class="accordion-collapse collapse" aria-labelledby="O130_izrada_navoja" data-bs-parent="#sw_tutorial">
+                      <div class="accordion-body">
+                        <ul class="nav nav-tabs" id="O130_izrada_navoja_Tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="montaza_ureznika-tab" data-bs-toggle="tab" data-bs-target="#montaza_ureznika" type="button" role="tab" aria-controls="montaza_ureznika" aria-selected="true">Монтажа</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pozicioniranje_ureznika-tab" data-bs-toggle="tab" data-bs-target="#pozicioniranje_ureznika" type="button" role="tab" aria-controls="pozicioniranje_ureznika" aria-selected="false">Позиционирање</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="urezivaje_do_4_mm-tab" data-bs-toggle="tab" data-bs-target="#urezivaje_do_4_mm" type="button" role="tab" aria-controls="urezivaje_do_4_mm" aria-selected="false">z= - 4 mm</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="urezivanje_do_7_mm-tab" data-bs-toggle="tab" data-bs-target="#urezivanje_do_7_mm" type="button" role="tab" aria-controls="urezivanje_do_7_mm" aria-selected="false">z= - 7 mm</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="urezivanje_do_7_mm_s2-tab" data-bs-toggle="tab" data-bs-target="#urezivanje_do_7_mm_s2" type="button" role="tab" aria-controls="urezivanje_do_7_mm_s2" aria-selected="false">z= - 7 mm</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="urezivanje_do_9_mm-tab" data-bs-toggle="tab" data-bs-target="#urezivanje_do_9_mm" type="button" role="tab" aria-controls="urezivanje_do_9_mm" aria-selected="false">z= - 9 mm</button>
+                          </li>
+                           <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="kontrola_izradjenog_navoja_snimak_1-tab" data-bs-toggle="tab" data-bs-target="#kontrola_izradjenog_navoja_snimak_1" type="button" role="tab" aria-controls="kontrola_izradjenog_navoja_snimak_1" aria-selected="false">Контрола</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="kontrola_izradjenog_navoja_snimak_2-tab" data-bs-toggle="tab" data-bs-target="#kontrola_izradjenog_navoja_snimak_2" type="button" role="tab" aria-controls="kontrola_izradjenog_navoja_snimak_2" aria-selected="false">Контрола</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pogresno_umeren_alat-tab" data-bs-toggle="tab" data-bs-target="#pogresno_umeren_alat" type="button" role="tab" aria-controls="pogresno_umeren_alat" aria-selected="false">Погрешно умеравање</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="O130_izrada_navoja_TabContent">
+                          <div class="tab-pane show active" id="montaza_ureznika" role="tabpanel" aria-labelledby="montaza_ureznika-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/al8TMkj0AFg?si=9Akb0x7oUlnja6lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>                            
+                          </div>
+                          <div class="tab-pane" id="pozicioniranje_ureznika" role="tabpanel" aria-labelledby="pozicioniranje_ureznika-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/FEzQ9_EW1bw?si=9GINPmNChHRqYWKu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="urezivaje_do_4_mm" role="tabpanel" aria-labelledby="urezivaje_do_4_mm-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/BpGcgtD7xj0?si=-DlqtkXLW6G93-x6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="urezivanje_do_7_mm" role="tabpanel" aria-labelledby="urezivanje_do_7_mm-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/4Fv7c4_NZeI?si=NWNPUOmWuEp4Nj_q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="urezivanje_do_7_mm_s2" role="tabpanel" aria-labelledby="urezivanje_do_7_mm_s2-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/Pk2wCaAKl-E?si=DbrI8DO8Q6XLfg9V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="urezivanje_do_9_mm" role="tabpanel" aria-labelledby="urezivanje_do_9_mm-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/QVmk15ax2QY?si=MIoF5KBAOAiy_Pka" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="kontrola_izradjenog_navoja_snimak_1" role="tabpanel" aria-labelledby="kontrola_izradjenog_navoja_snimak_1-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/hOP2sTQamCo?si=0iA-GprW2_aaZ9jn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="kontrola_izradjenog_navoja_snimak_2" role="tabpanel" aria-labelledby="kontrola_izradjenog_navoja_snimak_2-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/5PrOSXIvLOI?si=DCwYkG5eyI0sIOWC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="pogresno_umeren_alat" role="tabpanel" aria-labelledby="pogresno_umeren_alat-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/DGCTX1o_QSc?si=_jYhTvXkrp9flFF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="O130_Post_Process_H_tutorial">
-                      <button class="btn accordion-button disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_Post_Process_H_tutorial" aria-expanded="true" aria-controls="collapse_O130_Post_Process_H_tutorial">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_Post_Process_H_tutorial" aria-expanded="true" aria-controls="collapse_O130_Post_Process_H_tutorial">
                         Post Process for Hole Group Feature:
                       </button>
                     </h2>
                     <div id="collapse_O130_Post_Process_H_tutorial" class="accordion-collapse collapse" aria-labelledby="O130_Post_Process_H_tutorial" data-bs-parent="#sw_tutorial">
                       <div class="accordion-body">
                         <div class="card ratio ratio-16x9">
-                          
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/60EptOzQ-wA?si=r-FY73bXauzZ3BHN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="O130_Post_Process_tutorial">
-                      <button class="btn accordion-button disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_Post_Process_tutorial" aria-expanded="true" aria-controls="collapse_O130_Post_Process_tutorial">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_O130_Post_Process_tutorial" aria-expanded="true" aria-controls="collapse_O130_Post_Process_tutorial">
                         Post Process...:
                       </button>
                     </h2>
                     <div id="collapse_O130_Post_Process_tutorial" class="accordion-collapse collapse" aria-labelledby="O130_Post_Process_tutorial" data-bs-parent="#sw_tutorial">
                       <div class="accordion-body">
-                        <div class="card ratio ratio-16x9">
-                          
+                        <ul class="nav nav-tabs" id="O130_Post_Process_tutorial_Tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="redosled_operacija_steel-tab" data-bs-toggle="tab" data-bs-target="#redosled_operacija_steel" type="button" role="tab" aria-controls="redosled_operacija_steel" aria-selected="true">Редослед операција</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="post_process_full-tab" data-bs-toggle="tab" data-bs-target="#post_process_full" type="button" role="tab" aria-controls="post_process_full" aria-selected="false">Генерисање G кода</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="O130_Post_Process_tutorial_TabContent">
+                          <div class="tab-pane show active" id="redosled_operacija_steel" role="tabpanel" aria-labelledby="redosled_operacija_steel-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/U_iYr_PtMAM?si=CnRv66ZtTY4PwRwp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>                            
+                          </div>
+                          <div class="tab-pane" id="post_process_full" role="tabpanel" aria-labelledby="post_process_full-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/R3c9y6lQBkM?si=MO_E6TjQCkjgVv_m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
